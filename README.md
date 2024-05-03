@@ -1,5 +1,5 @@
 # Lail-Hellenbrand-Comp221-Final
-Implementing the FFT 
+Implementing the Fast Fourier Transform (FFT)
 
 # This is our code for implenting the FFT!
 The implementation itself is meant for a very simple usage of the FFT. Anticipated inputs are just arrays of points that should be length that is equal to a power of 2. 
