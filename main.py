@@ -21,11 +21,11 @@ def fft(a):
 	middle = n//2
 	for k in range(n//2):
         #store even and odd parts 
-		w_yodd_k = w[k] * f_Odd[k]
-		yeven_k = f_even[k]
+		w_f_Oddk = w[k] * f_Odd[k]
+		f_even_k = f_even[k]
 		#compute values for out put array
-		F[k]		 = yeven_k + w_yodd_k
-		F[k + middle] = yeven_k - w_yodd_k
+		F[k]		 = f_even_k + w_f_Oddk
+		F[k + middle] = f_even_k - w_f_Oddk
         
 	F = [val.real if val.imag == 0 else val for val in F]
 	return F
